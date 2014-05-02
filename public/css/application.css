@@ -1,0 +1,43 @@
+html,
+body,
+ul,
+.columns{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background: #f8f8f8;
+	color: #ddd;
+}
+
+
+
+header{
+	color: #cecece;
+	height: 50px;
+	padding: 10px 15px;
+}
+
+section{
+	border: 1px solid #ddd;
+}
+
+section .row, header .row{
+	max-width: 100%;
+}
+
+#contact_list{
+	background: #fdfdfd;
+	border-right: 1px solid #e6e6e6;
+	height: 700px;
+}
+
+#contact{
+	padding: 15px;
+}
+
+#contact h5{
+	color: #ddd;
+	font-weight: bold;
+}
