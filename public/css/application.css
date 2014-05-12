@@ -1,3 +1,8 @@
+@font-face{
+	font-family: "VarelaRound";
+	src: url(../fonts/VarelaRound-Regular.otf);
+}
+
 html,
 body,
 ul,
@@ -9,9 +14,14 @@ ul,
 body{
 	background: #f8f8f8;
 	color: #ddd;
+	overflow: hidden;
 }
 
-
+button{
+	background: #fff;
+	color: #999;
+	border: 1px solid #c9c9c9;
+}
 
 header{
 	color: #cecece;
@@ -20,24 +30,144 @@ header{
 }
 
 section{
-	border: 1px solid #ddd;
+	font-family: "VarelaRound";
+	border-top: 1px solid #ddd;
+	/*overflow: hidden;*/
+	/*min-height: 600px;*/
 }
 
 section .row, header .row{
 	max-width: 100%;
 }
 
+#contact_list,
+#contact,
+#edit_contact{
+  padding-bottom: 99999px;
+  margin-bottom: -99999px;
+}
+
 #contact_list{
 	background: #fdfdfd;
 	border-right: 1px solid #e6e6e6;
-	height: 700px;
+}
+
+#contact_list table{
+	width: 100%;
+	border: none;
+	border-collapse: collapse;
+}
+
+#contact_list table thead tr th, table tfoot tr th, table tbody tr td, table tr td, table tfoot tr td {
+	line-height: 0.6rem;
+	color: #b2b2b2;
+}
+
+#contact_list table a{
+	text-transform: capitalize;
+	color: #9e9e9e;
+	font-size: 12px;
+}
+
+#contact_list table .current{
+	color: #008cba;
+}
+
+#contact_list table a:hover{
+	color: #008cba;
+}
+
+#contact_list input[type="text"]{
+	border: none;
+	margin: 0;
+	border-radius: 0;
+}
+
+#contact .title{
+	color: #008cba;
+	font-size: 22px;
+	padding-bottom: 12px;
+}
+
+#contact .icon:before{
+	font-family: "foundation-icons";
+	content: "\f16d";
+	font-size: 20px;
+	padding: 7px 10px;
+	/*background: #707070;*/
+	background: rgba(0, 0, 0, 0.13);
+	margin-right: 12px;
+	border-radius: 100px;
+	color: #fff;
+}
+
+#contact .phone:before{
+	content: "\f16d";
+}
+
+#contact .email:before{
+	content: "\f1f8";
+}
+
+.phone, .email{
+	color: #999;
+	font-size: 18px;
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
 #contact{
-	padding: 15px;
+	width: 92%;
+	margin: auto;
 }
 
-#contact h5{
-	color: #ddd;
+#contact img{
+	width: 90%;
+	border: 1px solid #ddd;
+	padding: 2px;
+	border-radius: 4px;
+	background: #fff;
+}
+
+.biography{
+	color: #999;
+	font-size: 13px;
+	padding-top: 1em;
+}
+
+.actions{
+	padding: 2 0em;
+}
+
+
+#contact, #edit_contact{
+	padding: 10px;
+}
+
+#edit_contact{
+	/*min-height: 600px;*/
+	border-left: 1px solid #ddd;
+}
+
+#edit_contact h5{
+	color: #999;
 	font-weight: bold;
+}
+
+#edit_contact label{
+	color: #999;
+	font-size: 12px;
+}
+
+#edit_contact input[type="text"]{
+	border: 1px solid #dcdcdc;
+	margin: 0;
+	border-radius: 0;
+}
+
+#edit_contact textarea{
+	height: 100px;
+}
+
+.id{
+	font-size: 10px;
 }
